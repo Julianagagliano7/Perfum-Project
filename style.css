@@ -29,9 +29,10 @@ body {
   height: 100vh;
 }
 
-.img {
+.img {  
   border-radius: 10px;
 }
+/*Ver questão de ser de fato uma classe ou só img pela tag*/
 
 .parfum-description {
   background-color: var(--white);
@@ -110,3 +111,48 @@ body {
 .button:hover {
   background-color: #358F65;
 }
+
+  @media (max-width: 325px) {
+  .container{
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+ .img{
+  width: 18em;
+  height: 20em;
+ }
+ .parfum-description {
+  width: 18em;
+  height: 80em;
+ }
+ .small-text {
+  text-indent: 15px;
+  font-size: 12px;
+ }
+ .big-title {
+  text-indent: 10px;
+  font-size: 38px;
+ }
+ .paragraph {
+  text-indent: 10px;
+  font-size: 15px;
+ }
+ .big-price {
+  text-indent: 10px;
+  font-size: 33px;
+ }
+ .small-price {
+  font-size: 13px;
+ }
+ .button {
+  width: 250px;
+  height: 45px;
+ }
+ .button:hover{
+  background-color: #358F65;
+ }
+}
+
+/*Ver questão de arrumar small-price neste layout*/
+/*Ver questão de juntar as duas divs*/
+/*Ver questão acima da tag img não precisar de classe*/
