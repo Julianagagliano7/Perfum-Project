@@ -30,14 +30,14 @@ body {
 }
 
 .img {  
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .parfum-description {
   background-color: var(--white);
   width: 30%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .text {
@@ -111,7 +111,7 @@ body {
   background-color: #358F65;
 }
 
-@media (max-width: 325px) {
+@media (max-width: 480px) {
   .container{
     flex-direction: column;
     justify-content: flex-start;
@@ -120,53 +120,134 @@ body {
     margin: -2px;
   }
   .img{
-    width: 18em;
-    height: 18em;
-    border-top-left-radius: 10px;
+    width: 16em;
+    height: 14em;
     border-top-right-radius: 10px;
-    border-bottom-left-radius: 0px;
+    border-top-left-radius: 10px;
     border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
   }
   .parfum-description {
-    width: 18em;
-    height: 60em;
-    border-top-left-radius: 0px;
+    width: 16em;
+    height: 19em;
     border-top-right-radius: 0px;
-    border-bottom-left-radius: 10px;
+    border-top-left-radius: 0px;
     border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
   }
   .small-text {
+    font-size: 8px;
     text-indent: 15px;
-    font-size: 12px;
-    margin-top: 30px;
+    margin-top: 15px;
     margin-bottom: -15px;
+    margin-left:15px;
   }
   .big-title {
+    font-size: 20px;
     text-indent: 10px;
-    font-size: 38px;
+    margin-top:25px;
+    margin-left:15px;
   }
   .paragraph {
+    font-size: 10px;
     text-indent: 10px;
-    font-size: 15px;
+    line-height: 1.5;
     margin-top: 15px;
     margin-bottom: -20px;
+    margin-left:15px;
  }
   .big-price {
+    font-size: 20px;
     text-indent: 10px;
-    font-size: 33px;
     margin-right: -25px;
+    margin-left:15px;
   }
   .small-price {
-    font-size: 12px;
+    font-size: 8px;
     margin-right: 20px;
   }
   .button {
-    width: 250px;
-    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: 12px;
+    margin-top: -10px;
+    width: 100px;
+    height: 28px;
   }
   .button:hover{
     background-color: #358F65;
  }
+ .ico{
+  width: 12px;
+ }
+}
+
+
+@media (min-width: 481px) and (max-width:767px) {
+  .container{
+    flex-direction: row;
+  }
+  .img{
+    border-radius: 10px;
+    width: 13em;
+    height: 21em;
+  }
+  .parfum-description {
+    justify-content: flex-end;
+    border-radius: 10px;
+    width: 20em;
+    height: 21em;
+  }
+  .small-text {
+    font-size: 8px;
+    text-indent: 10px;
+    margin-top: 30px;
+    margin-bottom: -15px;
+    margin-left: 20px;
+  }
+  .big-title {
+    font-size: 25px;
+    text-indent: 12px;
+    margin-left: 20px;
+  }
+  .paragraph {
+    font-size: 12px;
+    text-indent: 12px;
+    margin-top:10px;
+    margin-bottom: -20px; 
+    margin-left: 20px;
+    line-height: 1.5;
+ }
+  .big-price {
+    font-size: 25px;
+    text-indent: 10px;
+    margin-right: -25px;
+    margin-left: 20px;
+  }
+  .small-price {
+    font-size: 10px;
+    margin-right: 20px;
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: 12px;
+    margin-top: -10px;
+    width: 100px;
+    height: 30px;
+  }
+  .button:hover{
+    background-color: #358F65;
+ }
+  .ico {
+    width: 14px;
+  }
+}
+
+@media (min-width: 768px) and (max-width:991px){
+
 }
 
 
